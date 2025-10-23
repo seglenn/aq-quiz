@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AQ Test by GCreates</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    
+    <div id="containerTitle">
+
+        <div id="titleDiv">
+            <div id="title">AQ Self-Assessment</div>
+                <div id="subtitle">
+                    Discover your Adversity Quotient by answering these 20 questions about how you handle challenges and setbacks.<br><br>
+                    There are no right or wrong answers. Be honest for the most accurate results!
+                </div>
+
+        <button id="startButton">Start Assessment</button>
+    </div>
+
+        </div>
+
+        <div id="questionDiv">
+
+            <p id="questionText"> </p>
+
+        </div>
+
+        <div id="answerDiv" >
+
+            <div class="scale-labels">
+                <span id="leftLabel"></span>
+                <span id="rightLabel"></span>
+            </div>
+
+            <div class="scale-numbers">
+
+                <input type="radio" id="option1" name="answer" value="1">
+                    <label for="option1" id="label1"> 1</label><br>
+
+                <input type="radio" id="option2" name="answer" value="2">
+                    <label for="option2" id="label2"> 2</label><br>
+
+                <input type="radio" id="option3" name="answer" value="3">
+                    <label for="option3" id="label3"> 3</label><br>
+
+                <input type="radio" id="option4" name="answer" value="4">
+                    <label for="option4" id="label4"> 4</label><br>
+
+                <input type="radio" id="option5" name="answer" value="5">
+                    <label for="option5" id="label5"> 5</label><br>
+
+            </div>
+        </div>
+
+        <div id="resultDiv" style="display:none;">
+
+            <h2>Test Complete!</h2>
+            <p id = "conservationResult">Conservation: <span id="conResult">0</span>/25</p>
+            <p id = "ownershipResult">Ownership: <span id="ownResult">0</span>/25</p>
+            <p id = "reachDimension">Reach: <span id="reachScore">0</span>/25</p>
+            <p id = "enduranceResult">Endurance: <span id="endResult">0</span>/25</p>
+
+            <p id="aveLabel">Average Score: <span id = "aveScore"> </span></p>
+
+            <button id="restartButton">Restart Test</button>
+
+        </div>
+
+    
+    <button id="nextButton" style="display:none;">Next Question</button>
+
+</body>
+<script src="script.js"> </script>
+</html>
